@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import Field from './Field/Field';
 
-import './style.scss';
+import './LoginForm.scss';
 
 /**
  * Affichage d'un formulaire de login (e-mail et mot de passe).
@@ -19,8 +19,8 @@ const LoginForm = ({
   isLogged,
   loggedMessage,
 }) => {
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
     handleLogin();
   };
 
