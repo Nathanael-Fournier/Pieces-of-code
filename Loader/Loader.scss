@@ -2,12 +2,10 @@
     width: 100px;
     height: 100px;
     background-color: black;
-    animation: rotateplane 1.5s infinite ease-in-out;
-    // Necessaire si display flex + align et justify center ?
-    // margin: v.$gutter auto;
-  }
-  
-@keyframes rotateplane {
+    animation: loaderRotation 2s infinite ease-in-out;
+}
+
+@keyframes loaderRotation {
     0% {
       transform: perspective(120px) rotateX(0deg) rotateY(0deg);
     }
@@ -18,4 +16,3 @@
       transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     }
 }
-  

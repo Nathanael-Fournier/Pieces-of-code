@@ -1,6 +1,6 @@
-// == Import
+// Import
 import './Loader.scss';
-// == Composant
+// Composant
 const Loader = () => <div className="loader" />;
-// == Export
+// Export
 export default Loader;

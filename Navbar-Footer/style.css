@@ -1,0 +1,39 @@
+body {
+    /* La taille que prend le body */
+    min-height: 100vh;
+    /* Display et flex-direction pour que le contenu soit toujours aligné de haut en bas */
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    border: solid 1px red;
+    /* La taille que prend le header */
+    height: 10vh;
+    width: 100vw;
+    /* Permet qu'il reste 'bloqué' en haut de l'écran */
+    position: fixed;
+    top: 0;
+}
+
+.main {
+    border: solid 1px blue;
+    /* Position du main pour qu'il prenne toute la place disponible jusqu'au footer */
+    flex: 1;
+    /* Padding pour que le contenu démarre sous le header */
+    padding-top: 10vh;
+}
+
+.footer {
+    border: solid 1px orange;
+    /* La taille que prend le footer */
+    height: 5vh;
+    width: 100vw;
+}
+
+.header, .main, .footer {
+    /* Position du contenu des balises */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
